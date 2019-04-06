@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+<div class="container">
+    <br>
+<form action="unlock" method="post">
+    <label for="password"> Enter Your Password </label>
+    <input id="password" name="password" type="password" maxlength="20">
+    <input id="submit"value="OK" type="submit">
+</form>
+</div>
+{% endblock %}
