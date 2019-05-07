@@ -1,11 +1,12 @@
-{% extends 'bootstrap/base.html' %}                   <!-- Inherite from the bootstrap/base.html -->
+{% extends "base.html" %}
 
-{% block title %} Web Door Lock {% endblock %} <!-- title -->
-{% block content %}			     <!-- page content -->	
-<div class= "container">
- <h1><b>Hello World</b></h1>
-<hr>
-<p> My name is Ahmed Nouira </p>
-</di>
-
+{% block app_content %}
+<div class="container">
+    <br>
+<form action="unlock" method="post">
+    <label for="password"> Enter Your Password </label>
+    <input id="password" name="password" type="password" maxlength="20">
+    <input id="submit"value="OK" type="submit">
+</form>
+</div>
 {% endblock %}
